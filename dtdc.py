@@ -113,7 +113,7 @@ if __name__ == '__main__':
         # updatedTime, status, df = multiprocessing.Value()
         start = t.time()
 
-        p = multiprocessing.Process(target=main, name="Main")
+        p = multiprocessing.Process(target=main, name="Main", args=(trackingNumber,))
         p.start()
 
         t.sleep(20)
